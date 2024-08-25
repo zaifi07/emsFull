@@ -1,0 +1,240 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navigationBar{
+  min-width: 375px;
+  background-color: #2f2388;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+
+.imgDiv{
+  margin-top: -9px;
+  width: 70px;
+}
+
+.navImg{
+  width: 100%;
+}
+
+
+.insideNav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation{
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login{
+  display: flex;
+  max-width: 375px;
+  min-width: 375px; 
+  border-radius: 7px;
+  margin: 2rem auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.login h1{
+  margin-top: .7rem;
+}
+
+.login input{
+  border-radius: 7px;
+  border: 1px solid rgb(15, 15, 91);
+  outline: none;
+} 
+.login p{
+  margin: 0;
+  padding: 0;
+}
+.login button{
+  padding: 0.75rem 2rem;
+  border-radius: 7px;
+  outline: none;
+  border: none;background-color: #2f2388;
+  color: white;
+  margin-bottom: .7rem;
+}
+
+.filters{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.anticon svg{
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.active{
+  color: black;
+  width: 15px;
+}
+.inactive{
+  color: gray;
+  width: 15px;
+}
+
+.charts{
+  display:  flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.contentBody{
+  min-width: 375px;
+    font-size: 11px;
+}
+
+
+
+.graphCard{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.filterBtn{
+  min-width: 60px;
+  padding: 0.4rem;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background-color: #2f2388;
+}
+
+.tableIconsBox{
+  min-width: 80px;
+}
+.tableIcons{
+  width: 15px;
+}
+
+.tableDate{
+  min-width: 80px;
+}
+
+
+
+@media only screen and (min-width: 992px){
+  .charts{
+    flex-direction: row;
+    font-size: 18px;
+  }
+  .graphCard{
+    flex-direction: row;
+    gap: 22px;
+  }
+  .active,.inactive{
+    margin-top: 30px;
+    width: 25px;
+  }
+  .contentBody{
+    font-size: 1.125rem;
+  }
+  .tableIcons{
+    width: 20px;
+  }
+  .filterBtn{
+    padding: 0.5rem 1rem;
+    margin-top: 22px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
+
+  .contentBody{
+    font-size: 0.9rem;
+  }
+  .tableIcons{
+    width: 20px;
+  }
+  .filters h6{
+    font-size: 17px;
+  }
+  .filters select {
+    font-size: 15px; 
+  }
+  .inactive,.active{
+    width: 22px;
+    margin-top: 27px;
+  }
+  .filterBtn{
+    margin-top: 23px;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media only screen and (min-device-width: 576px) and (max-device-width: 767px) {
+  .contentBody{
+    font-size: 0.7rem;
+  }
+  .tableIcons{
+    width: 18px;
+  }
+  .filters h6{
+    font-size: 14px;
+  }
+  .filters select {
+    font-size: 13px; 
+  }
+  .inactive,.active{
+    width: 17px;
+    margin-top: 27px;
+  }
+  .filterBtn{
+    margin-top: 20px;
+    padding: 0.427rem 0.8rem;
+  }
+}
+
+@media only screen and (min-device-width: 376px) and (max-device-width: 575px) {
+  .navigationBar p{
+    display: none;
+  }
+  .filters h6{
+    font-size: 13px;
+  }
+  .filters select {
+    font-size: 11px;
+  }
+  .inactive,.active{
+    margin-top: 23px;
+  }
+  .filterBtn{
+    padding: 0.37rem 0.7rem;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 0px) and (max-device-width: 375px) {
+
+  .navigationBar p{
+    display: none;
+  }
+  .filters h6{
+    font-size: 11px;
+  }
+  .filters select {
+    font-size: 10px; 
+  }
+  .inactive,.active{
+    margin-top: 20px;
+  }
+  .filterBtn{
+    margin-top: 15px;
+  }
+}
